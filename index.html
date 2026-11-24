@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="KISHIN — A collection of creative works, projects, experiments, and ideas."
+    />
+
+    <meta name="author" content="KISHIN" />
+
+    <title>KISHIN — Creative Works</title>
+
+    <!-- Website Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="Assets/Images/kishin-icon.png"
+    />
+
+    <!-- Browser Theme Color -->
+    <meta name="theme-color" content="#171817" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Lenis smooth scrolling -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.27/dist/lenis.css"
+    />
+
+    <!-- Animation libraries -->
+    <script
+      src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      defer
+    ></script>
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js" defer></script>
+    <script type="module" src="js/animations.js"></script>
+  </head>
+
+  <body>
+    <!-- ==================================
+         INTRO SCREEN
+    =================================== -->
+
+    <section class="intro-screen">
+      <div class="intro-content">
+        <p class="intro-label">KISHIN / CREATIVE WORKS ARCHIVE</p>
+
+        <h1>
+          IDEAS
+          <br />
+          BECOME THINGS.
+        </h1>
+
+        <p class="intro-description">
+          Sebuah kumpulan karya,proyek,gambar yang saya buat.
+        </p>
+
+        <button class="intro-enter" id="enter-button">
+          ENTER ARCHIVE
+          <span>→</span>
+        </button>
+      </div>
+
+      <div class="intro-footer">
+        <span>KISHIN CREATIVE ARCHIVE</span>
+        <span>EST. 2026</span>
+      </div>
+    </section>
+
+    <!-- ==================================
+         HEADER & NAVBAR
+    =================================== -->
+
+    <header class="header">
+      <div class="container">
+        <!-- BRAND -->
+
+        <a href="#home" class="logo" aria-label="KISHIN Home">
+          <img src="Assets/Images/kishin-icon.png" alt="" class="brand-icon" />
+
+          <span class="brand-name">
+            KISHIN<span class="brand-dot">.</span>
+          </span>
+        </a>
+
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <!-- MOBILE TOGGLE -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarMenu"
+              aria-controls="navbarMenu"
+              aria-expanded="false"
+              aria-label="Open navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- NAVIGATION LINKS -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav ms-auto align-items-lg-center">
+                <!-- HOME -->
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">
+                    <span class="nav-number">01</span>
+                    Home
+                  </a>
+                </li>
+
+                <!-- WORKS -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">
+                    <span class="nav-number">02</span>
+                    Works
+                  </a>
+                </li>
+
+                <!-- ABOUT -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">
+                    <span class="nav-number">03</span>
+                    About
+                  </a>
+                </li>
+
+                <!-- EDUCATION -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#school">
+                    <span class="nav-number">04</span>
+                    Education
+                  </a>
+                </li>
+
+                <!-- EXPLORE BUTTON -->
+                <li class="nav-item nav-cta">
+                  <a href="#projects" class="nav-explore">
+                    Explore Works
+                    <span>↗</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==================================
+         MAIN CONTENT
+    =================================== -->
+
+    <main>
+      <!-- ==================================
+             01. HOME / HERO
+        =================================== -->
+
+      <section id="home" class="hero">
+        <!-- Background Video -->
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="Assets/Videos/samurai1.mp4" type="video/mp4" />
+        </video>
+
+        <!-- Video Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Hero Content -->
+        <div class="container hero-content">
+          <p class="subtitle">KISHIN — CREATIVE WORKS</p>
+
+          <h1>
+            Ideas become
+            <span>reality.</span>
+          </h1>
+
+          <p class="hero-description">
+            Sebuah Website yang menampilkan berbagai karya,proyek juga menjadi dokumentasi
+            perjalanan dalam mempelajari pemograman,desain,dan berbagai bidang lainnya.
+          </p>
+
+          <a href="#projects" class="button"> Explore Works </a>
+        </div>
+
+        <!-- Hero Index -->
+        <div class="hero-index">
+          <span>01 / 04</span>
+
+          <span>CREATIVE ARCHIVE</span>
+        </div>
+      </section>
+
+      <!-- ==================================
+             02. WORKS / PROJECTS
+        =================================== -->
+
+      <section id="projects" class="section projects-section">
+        <div class="container">
+          <!-- WORKS HEADING -->
+          <div class="works-heading">
+            <div>
+              <p class="section-label">01 — SELECTED WORKS</p>
+
+              <h2>Selected Works.</h2>
+
+              <p class="section-description">
+                A selection of projects and creative works.
+              </p>
+            </div>
+
+            <p class="works-count">03 WORKS</p>
+          </div>
+
+          <!-- PROJECT LIST -->
+          <div class="project-list">
+            <!-- PROJECT 01 -->
+            <article class="project-card">
+              <div class="project-image">
+                <a
+                  href="https://azka673.github.io/GAME-Adventure/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="Assets/Images/Kucing 2.jpg"
+                    alt="Project 01"
+                    loading="lazy"
+                  />
+                </a>
+
+                <span class="project-number">01</span>
+              </div>
+
+              <div class="project-info">
+                <p class="project-category">GAME / DEVELOPMENT</p>
+                <h3>Formatting Teks, Word</h3>
+                <p>
+                  Sebuah proyek pengembangan game petualangan menggunakan
+                  teknologi web.
+                </p>
+              </div>
+            </article>
+
+            <!-- PROJECT 02 -->
+            <article class="project-card">
+              <div class="project-image">
+                <a
+                  href="https://azka673.github.io/GAME-Adventure/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="Assets/Images/Kucing 2.jpg"
+                    alt="Project 02"
+                    loading="lazy"
+                  />
+                </a>
+
+                <span class="project-number">02</span>
+              </div>
+
+              <div class="project-info">
+                <p class="project-category">PROJECT / WEB</p>
+                <h3>Nirmana Project</h3>
+                <p>
+                  Proyek pengembangan gambar nirmana sebagai bagian dari eksplorasi
+                  teknologi web.
+                </p>
+              </div>
+            </article>
+
+            <!-- PROJECT 03 -->
+            <article class="project-card">
+              <div class="project-image">
+                <a
+                  href="https://azka673.github.io/GAME-Adventure/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="Assets/Images/Kucing 2.jpg"
+                    alt="Project 03"
+                    loading="lazy"
+                  />
+                </a>
+
+                <span class="project-number">03</span>
+              </div>
+
+              <div class="project-info">
+                <p class="project-category">DOCUMENT / TYPOGRAPHY</p>
+                <h3>Excel, Kolah data</h3>
+                <p>
+                  Karya yang dibuat untuk mempelajari pengolahan data dan
+                  format teks menggunakan Microsoft Excel maupun Google Sheets.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================
+             03. ABOUT
+        =================================== -->
+
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="about-layout">
+            <!-- ABOUT HEADING -->
+            <div class="about-heading">
+              <p class="section-label">02 — ABOUT</p>
+
+              <h2>
+                Beyond
+                <span>the ordinary.</span>
+              </h2>
+            </div>
+
+            <!-- ABOUT DESCRIPTION -->
+            <div class="about-content">
+              <p class="section-description">
+                KISHIN merupakan Website untuk mengumpulkan dan menampilkan
+                berbagai karya, proyek, serta eksperimen kreatif yang saya buat.
+              </p>
+
+              <p class="section-description">
+                Website ini juga menjadi dokumentasi perjalanan dalam
+                mempelajari teknologi, pemrograman, desain, dan berbagai bidang
+                kreatif lainnya.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================
+           04. EDUCATION
+      =================================== -->
+      <section id="school" class="section education-section">
+        <div class="container">
+          <p class="section-label">03 — BACKGROUND</p>
+
+          <div class="education-heading">
+            <h2>Education.</h2>
+            <p>
+              My educational journey and the experiences that have shaped my
+              learning process.
+            </p>
+          </div>
+
+          <div class="education-grid">
+            <!-- CURRENT EDUCATION -->
+            <article class="education-card education-card--current">
+              <div class="education-meta">
+                <p class="subtitle">CURRENT EDUCATION</p>
+                <span class="education-status">CURRENT</span>
+              </div>
+
+              <h3>SMPIT AL USWAH SURABAYA</h3>
+
+              <p class="education-description">
+                Saya menempuh pendidikan di SMPIT AL USWAH SURABAYA. Di sini
+                saya mempelajari berbagai bidang ilmu serta mengembangkan minat
+                dalam teknologi, pemrograman, dan kreativitas.
+              </p>
+
+              <a
+                href="https://us-learning.aluswahsby.sch.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Official Website
+                <span>↗</span>
+              </a>
+            </article>
+
+            <!-- PAST EDUCATION -->
+            <article class="education-card education-card--past">
+              <div class="education-meta">
+                <p class="subtitle">PAST EDUCATION</p>
+                <span class="education-status education-status--past">
+                  COMPLETED
+                </span>
+              </div>
+
+              <h3>SD ISLAM MARYAM SURABAYA</h3>
+
+              <p class="education-description">
+                Saya pernah menempuh pendidikan di SD Islam Maryam Surabaya.
+                Di sini saya mempelajari berbagai bidang ilmu dasar serta
+                mengembangkan minat dalam teknologi, pemrograman, dan
+                kreativitas.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- ==================================
+         FOOTER
+    =================================== -->
+
+    <footer class="footer">
+      <div class="container">
+        <!-- FOOTER MAIN -->
+        <div class="footer-main">
+          <!-- BRAND -->
+          <div class="footer-brand">
+            <a href="#home" class="footer-logo"> KISHIN<span>.</span> </a>
+
+            <p>A space for works, ideas, and exploration.</p>
+          </div>
+
+          <!-- FOOTER NAVIGATION -->
+          <div class="footer-navigation">
+            <p class="footer-heading">NAVIGATION</p>
+
+            <a href="#home"> Home </a>
+
+            <a href="#projects"> Works </a>
+
+            <a href="#about"> About </a>
+
+            <a href="#school"> Education </a>
+          </div>
+
+          <!-- FOOTER INFORMATION -->
+          <div class="footer-information">
+            <p class="footer-heading">INFORMATION</p>
+
+            <p>Creative Works Archive</p>
+
+            <p>Indonesia</p>
+
+            <p>Established 2026</p>
+          </div>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+          <p>© 2026 Muhammad azka saghofi pradana. All rights reserved.</p>
+
+          <a href="#home"> BACK TO TOP ↑ </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================================
+         BOOTSTRAP JAVASCRIPT
+    =================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
